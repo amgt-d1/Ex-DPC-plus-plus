@@ -41,4 +41,4 @@ If you use our implementation, please cite the following paper.
 
 ## License
 Copyright (c) 2023 Daichi Amagata  
-This software is released under the [MIT license](https://github.com/amgt-d1/Ex-DPC-plus-plus/license.txt).
+This software is released under the [MIT license](https://github.com/amgt-d1/Ex-DPC-plus-plus/blob/main/LICENSE).
