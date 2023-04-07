@@ -1,5 +1,5 @@
 ## Introduction
-* This repository provides implementations of Ex-DPC++.
+* This repository provides implementations of Ex-DPC++, an extended version of [Ex-DPC](https://github.com/amgt-d1/DPC).
 * This is a fast algorithm for [density-peaks clustering](https://science.sciencemag.org/content/344/6191/1492.full) (proposed in Science).
 * As for the detail about this algorithm, please read our TKDD paper, [Fast Density-Peaks Clustering for Static and Dynamic Data in Euclidean Spaces](https://dl.acm.org/doi/).
 
