@@ -670,32 +670,6 @@ public:
         file.close();
     }
 
-    // output local density
-    void output_rho()
-    {
-        std::string f_name = "result/";
-        if (dataset_id == 0) f_name += "0-airline";
-        if (dataset_id == 1) f_name += "1-household";
-        if (dataset_id == 2) f_name += "2-pamap2";
-        if (dataset_id == 3) f_name += "3-sensor";
-        if (dataset_id == 4) f_name += "4-tdrive";
-        if (dataset_id == 5) f_name += "5-syn";
-
-        f_name += "/rho-id(" + std::to_string(dataset_id) + ")_sampling_rate(" + std::to_string(sampling_rate) + ")_cutoff(" + std::to_string(cutoff) + ").csv";
-        std::ofstream file;
-        file.open(f_name.c_str(), std::ios::out | std::ios::app);
-
-        if (file.fail())
-        {
-            std::cerr << " cannot open the output file." << std::endl;
-            file.clear();
-            return;
-        }
-
-        for (unsigned int i = 0; i < local_density_set.size(); ++i) file << local_density_set[i].first << "\n";
-        file.close();
-    }
-
     // result output
     void output_result()
     {
