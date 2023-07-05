@@ -1,7 +1,7 @@
 ## Introduction
 * This repository provides implementations of Ex-DPC++, an extended version of [Ex-DPC](https://github.com/amgt-d1/DPC).
 * This is a fast algorithm for [density-peaks clustering](https://science.sciencemag.org/content/344/6191/1492.full) (proposed in Science).
-* As for the detail about this algorithm, please read our TKDD paper, [Fast Density-Peaks Clustering for Static and Dynamic Data in Euclidean Spaces](https://dl.acm.org/doi/).
+* As for the detail about this algorithm, please read our TKDD paper, [Efficient Density-Peaks Clustering Algorithms on Static and Dynamic Data in Euclidean Space](https://dl.acm.org/doi/).
 
 ## Requirement
 *  [Eigen](https://eigen.tuxfamily.org/)
@@ -31,7 +31,7 @@
 If you use our implementation, please cite the following paper.
 ``` 
 @article{amagata202xdpc,  
-    title={Fast Density-Peaks Clustering for Static and Dynamic Data in Euclidean Spaces},  
+    title={Efficient Density-Peaks Clustering Algorithms on Static and Dynamic Data in Euclidean Spaces},  
     author={Amagata, Daichi and Hara, Takahiro},  
     booktitle={ACM Transactions on Knowledge Discovery from Data},  
     pages={xx--xx},  
