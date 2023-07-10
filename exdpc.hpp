@@ -586,15 +586,13 @@ public:
     void run()
     {
         // offline
-        //ct = CoverTree::from_points(point_set, -1, false);
-        //ct->count_child();
         memory_usage = process_mem_usage();
         vpt.input(pset, dimensionality);
         time_offline = vpt.build();
         std::cout << " vp-tree build time: " << time_offline << "[msec]\n";
         build_knn_matrix();
         memory_usage = process_mem_usage() - memory_usage;
-	    std::cout << " index memory: " << memory_usage << "[MB]\n\n";
+	std::cout << " index memory: " << memory_usage << "[MB]\n\n";
 
         // local density computation
         compute_local_density();
@@ -603,9 +601,7 @@ public:
         compute_dependency();
 
         // labeling
-        //labeling();
-
-        //output_rho();
+        labeling();
     }
 
     // output decision graph
