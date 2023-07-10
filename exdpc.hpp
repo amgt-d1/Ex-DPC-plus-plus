@@ -592,7 +592,7 @@ public:
         std::cout << " vp-tree build time: " << time_offline << "[msec]\n";
         build_knn_matrix();
         memory_usage = process_mem_usage() - memory_usage;
-	std::cout << " index memory: " << memory_usage << "[MB]\n\n";
+		std::cout << " index memory: " << memory_usage << "[MB]\n\n";
 
         // local density computation
         compute_local_density();
@@ -614,6 +614,7 @@ public:
         if (dataset_id == 3) f_name += "3-sensor";
         if (dataset_id == 4) f_name += "4-tdrive";
         if (dataset_id == 5) f_name += "5-syn";
+		if (dataset_id == 6) f_name += "6-gas";
 
         f_name += "/dg-id(" + std::to_string(dataset_id) + ")_sampling_rate(" + std::to_string(sampling_rate) + ")_cutoff(" + std::to_string(cutoff) + ").csv";
         std::ofstream file;
@@ -650,6 +651,7 @@ public:
         if (dataset_id == 3) f_name += "3-sensor";
         if (dataset_id == 4) f_name += "4-tdrive";
         if (dataset_id == 5) f_name += "5-syn";
+	    if (dataset_id == 6) f_name += "6-gas";
 
         f_name += "/label-id(" + std::to_string(dataset_id) + ")_sampling_rate(" + std::to_string(sampling_rate) + ")_cutoff(" + std::to_string(cutoff) + ").csv";
         std::ofstream file;
