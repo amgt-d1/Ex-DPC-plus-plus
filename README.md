@@ -31,12 +31,14 @@
 ## Citation
 If you use our implementation, please cite the following paper.
 ``` 
-@article{amagata202xdpc,  
+@article{amagata2024dpc,  
     title={Efficient Density-Peaks Clustering Algorithms on Static and Dynamic Data in Euclidean Spaces},  
     author={Amagata, Daichi and Hara, Takahiro},  
-    booktitle={ACM Transactions on Knowledge Discovery from Data},  
-    pages={xx--xx},  
-    year={202x}  
+    booktitle={ACM Transactions on Knowledge Discovery from Data},
+	volume={18},
+	number={1},
+    pages={2:1--2:27},  
+    year={2024}  
 }
 ```
 
